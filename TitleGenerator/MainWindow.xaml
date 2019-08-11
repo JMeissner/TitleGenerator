@@ -8,14 +8,15 @@
         Title="Titel Generator" Height="800" Width="1200">
     <Grid Margin="0,101,-0.4,0.4">
         <StackPanel Height="97" Margin="0,-100,0,0" VerticalAlignment="Top" Orientation="Horizontal">
-            <Button Height="23" Width="50" Content="Left" Click="Button_Click" />
-            <Button Height="23" Width="50" Content="Up" Margin="0, -50, 0, 0" />
-            <Button Height="23" Width="50" Content="Down" Margin="-50, 50, 0, 0" />
-            <Button Height="23" Width="50" Content="Right" />
-            <TextBox Name="TB_Text" Height="23" Width="150" TextWrapping="Wrap" Text="Insert Text" Margin="100, 0, 0, 0" TextChanged="TB_Text_TextChanged" />
-            <TextBox Name="TB_FontSize" Height="23" Width="75" TextWrapping="Wrap" Text="15" Margin="10, 0, 0, 0" TextChanged="TB_FontSize_TextChanged" />
-            <Button Height="23" Width="100" Content="Invert Colors" Margin="100, 0, 0, 0" />
-            <Button Height="40" Width="75" Content="Generate" Background="LightGreen" Click="Button_Generate" Margin="425, 0, 0, 0" />
+            <RepeatButton Height="23" Width="50" Content="Left" Click="Button_Left" />
+            <RepeatButton Height="23" Width="50" Content="Up" Margin="0, -50, 0, 0" Click="Button_Up" />
+            <RepeatButton Height="23" Width="50" Content="Down" Margin="-50, 50, 0, 0" Click="Button_Down" />
+            <RepeatButton Height="23" Width="50" Content="Right" Click="Button_Right" />
+            <TextBox Name="TB_Text" Height="75" Width="200" TextWrapping="Wrap" Text="Insert Text" Margin="50, 0, 0, 0" TextChanged="TB_Text_TextChanged" />
+            <Label Height="23" Width="75" Content="Font Size" Margin="10, -50, 0,0 " />
+            <TextBox Name="TB_FontSize" Height="23" Width="75" TextWrapping="Wrap" Text="15" Margin="-70, 0, 0, 0" TextChanged="TB_FontSize_TextChanged" />
+            <Button Height="23" Width="100" Content="Invert Colors" Margin="100, 0, 0, 0" Click="Button_Invert" />
+            <Button Height="40" Width="75" Content="Save" Background="LightGreen" Click="Button_Generate" Margin="410, 0, 0, 0" />
         </StackPanel>
         <Image Name="IMG_Preview" HorizontalAlignment="Left" Height="669" Margin="0,0,0,0" VerticalAlignment="Top" Width="1194" />
     </Grid>
